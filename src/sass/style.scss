@@ -1,0 +1,73 @@
+@import "libs/_fonts.scss";
+@import "base/_nullstyle.scss";
+
+@import "base/_variables";
+@import "base/mixins";
+
+body {
+	font-family: "Gilroy";
+	font-size: 18px;
+	line-height: 22px;
+	color: #070707;
+}
+.container {
+	max-width: 944px;
+	margin: 0 auto;
+}
+.menu {
+	position: absolute;
+	top: 0;
+	left: 0%;
+	z-index: 10;
+	width: 100%;
+	background: #fff;
+	&__humburger {
+		display: none;
+	}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		font-weight: bold;
+		color: #828282;
+		padding: 33px 0 31px;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background: #828282;
+			bottom: 0;
+		}
+	}
+	&__link.active {
+		color: #070707;
+	}
+}
+
+.main {
+	padding: 128px 0 104px 0;
+
+	&__body {
+		display: grid;
+		grid-template: repeat(2, auto) / (124px 155px);
+		column-gap: 297px;
+		margin-bottom: 50px;
+		align-items: end;
+
+		.name {
+			font-size: 48px;
+			line-height: 59px;
+			font-weight: bold;
+		}
+		.descr {
+			padding-bottom: 5px;
+		}
+	}
+	img {
+		width: 100%;
+	}
+}
+
+@import "blocks/media";
