@@ -14,6 +14,23 @@ body {
 	max-width: 944px;
 	margin: 0 auto;
 }
+.title {
+	font-size: 34px;
+	line-height: 42px;
+	text-align: center;
+	font-weight: bold;
+}
+.btn {
+	display: block;
+	background: #000000;
+	border-radius: 50px;
+	text-align: center;
+	width: 180px;
+	height: 42px;
+	color: #ffffff;
+	font-weight: bold;
+	margin: 0 auto;
+}
 .menu {
 	position: absolute;
 	top: 0;
@@ -70,4 +87,249 @@ body {
 	}
 }
 
+.about {
+	background: #f6f6f6;
+	padding: 120px 0 107px 0;
+	&__title {
+		margin-bottom: 18px;
+	}
+	&__text {
+		text-align: center;
+		max-width: 485px;
+		margin: 0 auto;
+		p {
+			margin-bottom: 48px;
+			&:last-child {
+				max-width: 340px;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+.scills {
+	padding: 91px 0 110px 0;
+	&__title {
+		margin-bottom: 70px;
+	}
+	&__text {
+		text-align: center;
+		margin-bottom: 84px;
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		img {
+			max-width: 166px;
+			padding: 15px;
+			max-height: 206px;
+		}
+	}
+}
+.portfolio {
+	background: #f6f6f6;
+	padding: 113px 0 97px 0;
+	&__title {
+		margin-bottom: 47px;
+	}
+
+	&__content {
+		img {
+			display: block;
+			width: 100%;
+			margin: 0 auto 45px auto;
+
+			object-fit: cover;
+		}
+		&-link {
+			text-align: center;
+			text-decoration-line: underline;
+		}
+		&:not(:last-child) {
+			margin-bottom: 99px;
+		}
+	}
+}
+.contacts {
+	padding: 114px 0 123px 0;
+	&__title {
+		margin-bottom: 20px;
+	}
+	&__text {
+		text-align: center;
+		max-width: 275px;
+		margin: 0 auto 30px auto;
+	}
+	&__btn {
+		margin: 0 auto 86px auto;
+	}
+	&__sotial {
+		&-wrapper {
+			display: flex;
+			justify-content: space-between;
+			max-width: 342px;
+			margin: 0 auto 45px auto;
+		}
+		&-descr {
+			font-size: 14px;
+			line-height: 17px;
+			text-align: center;
+
+			color: #828282;
+		}
+	}
+}
+
+.overlay {
+	padding: 150px 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	top: 0;
+	left: 0;
+	z-index: 20;
+	display: none;
+	overflow: auto;
+	&.hidden {
+		display: block;
+	}
+}
+.form {
+	max-width: 550px;
+	margin: 0 auto;
+	color: #fff;
+	padding: 30px 0;
+	&__body {
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(51, 51, 51, 0.9) url("../img/ZZ5H.gif") center/50px no-repeat;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.5s ease 0s;
+		}
+		&._sending::after {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	&__title {
+		font-size: 40px;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+	&__item {
+		margin-bottom: 20px;
+	}
+	&__label {
+		font-size: 18px;
+		display: block;
+		margin-bottom: 10px;
+	}
+	&__input {
+		height: 50px;
+		padding: 0 20px;
+		border-radius: 5px;
+		width: 100%;
+		font-size: 18px;
+		transition: box-shadow 0.5s ease 0s;
+		&:focus {
+			box-shadow: 0 0 15px #64c032;
+		}
+		&._error {
+			box-shadow: 0 0 15px red;
+		}
+	}
+	&__button {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 60px;
+		background: #868686;
+		color: #fff;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-weight: bold;
+		cursor: pointer;
+		border-radius: 20px;
+		box-shadow: 0 5px 0 #20261d;
+		position: relative;
+		transition: background-color 0.5s ease 0s;
+		top: 0;
+		&:hover {
+			background-color: #686868;
+		}
+		&:active {
+			top: 3px;
+			box-shadow: 0 2px 0 #20261d;
+		}
+	}
+}
+
+textarea.form__input {
+	min-height: 120px;
+	resize: vertical;
+	padding: 20px;
+}
+.checkbox {
+	&._error {
+		.checkbox__label {
+			&::before {
+				box-shadow: 0 0 15px red;
+			}
+		}
+	}
+	&__input {
+		display: none;
+		&:checked {
+			+ {
+				.checkbox__label {
+					&::after {
+						transform: scale(1);
+					}
+				}
+			}
+		}
+	}
+	&__label {
+		font-size: 16px;
+		line-height: 140%;
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		cursor: pointer;
+		&::before {
+			content: "";
+			flex: 0 0 24px;
+			height: 24px;
+			background: #fff;
+			border-radius: 4px;
+			align-self: flex-start;
+			margin-right: 10px;
+		}
+		&::after {
+			transition: transform 0.5s ease 0s;
+			content: "";
+			width: 16px;
+			height: 16px;
+			position: absolute;
+			top: 4px;
+			left: 4px;
+			background: #686868;
+			border-radius: 4px;
+			transform: scale(0);
+		}
+		a {
+			color: #7a956b;
+		}
+	}
+}
 @import "blocks/media";

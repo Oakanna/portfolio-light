@@ -18,6 +18,18 @@
 	.container {
 		max-width: 576px;
 	}
+	.about {
+		padding: 81px 0 76px 0;
+	}
+	.portfolio {
+		padding: 81px 0;
+		&__title {
+			margin-bottom: 65px;
+		}
+	}
+	.contacts {
+		padding: 82px 0 90px 0;
+	}
 }
 
 // Устройства X-Small (портретные телефоны, менее 576 пикселей)
@@ -110,6 +122,52 @@
 		&__link {
 			margin-bottom: 68px;
 			font-size: 34px;
+		}
+	}
+	.about {
+		&__text {
+			font-size: 16px;
+			p {
+				margin-bottom: 38px;
+			}
+		}
+	}
+	.scills {
+		&__wrapper {
+			justify-content: center;
+			img {
+				&:not(:last-child) {
+					margin-bottom: 50px;
+				}
+			}
+		}
+	}
+	.portfolio {
+		&__content {
+			&:not(:last-child) {
+				margin-bottom: 78px;
+			}
+
+			img {
+				margin: 0 auto 33px auto;
+			}
+		}
+	}
+	.contacts {
+		&__title {
+			margin-bottom: 27px;
+		}
+		&__text {
+			margin-bottom: 40px;
+		}
+		&__btn {
+			width: 316px;
+			margin-bottom: 48px;
+		}
+		&__sotial {
+			&-wrapper {
+				margin-bottom: 48px;
+			}
 		}
 	}
 }
