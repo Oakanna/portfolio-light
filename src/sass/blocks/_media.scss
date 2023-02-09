@@ -30,6 +30,11 @@
 	.contacts {
 		padding: 82px 0 90px 0;
 	}
+	.scills {
+		&__scill:not(:last-child) {
+			margin: 0px 0px 80px 0px;
+		}
+	}
 }
 
 // Устройства X-Small (портретные телефоны, менее 576 пикселей)
@@ -51,6 +56,7 @@
 
 	.menu {
 		&__humburger {
+			background-color: #fff;
 			display: block;
 			position: absolute;
 			z-index: 5;
@@ -134,14 +140,10 @@
 	}
 	.scills {
 		&__wrapper {
-			justify-content: center;
-			img {
-				&:not(:last-child) {
-					margin-bottom: 50px;
-				}
-			}
+			flex-direction: column;
 		}
 	}
+
 	.portfolio {
 		&__content {
 			&:not(:last-child) {
