@@ -28,204 +28,214 @@
 </head>
 
 <body>
-	<nav class="menu">
-		<div class="container">
-			<div class="menu__humburger">
-				<span></span>
-			</div>
-			<div class="menu__body">
-				<a data-goto='.main' class="menu__link active" href="#">Home</a>
-				<a data-goto='.about' class="menu__link" href="#">About me</a>
-				<a data-goto='.scills' class="menu__link" href="#">Skills</a>
-				<a data-goto='.portfolio' class="menu__link" href="#">Portfolio</a>
-				<a data-goto='.contacts' class="menu__link" href="#">Contacts</a>
-			</div>
-		</div>
-	</nav>
-	<section class="main">
-		<div class="container">
-
-			<div class="main__body">
-				<h1 class="name">Denis Novik</h1>
-				<div class="descr">UX | UI designer <br> 24 years old, Minsk</div>
-			</div>
-			<picture class="main__photo">
-				<source media="(min-width: 576px)" srcset="img/main_photo.png">
-				<source media="(max-width: 576px)" srcset="img/mobile_photo.png">
-				<img src="img/main_photo.png" alt="Denis Novik">
-			</picture>
-		</div>
-	</section>
-	<section class="about">
-		<div class="container">
-			<h2 class="title about__title">
-				About me
-			</h2>
-			<div class="about__text">
-				<p>Hi, I'm Denis - UX/UI designer from Minsk.
-					I'm interested in design and everything connected with it.</p>
-
-				<p>I'm studying at courses "Web and mobile design
-					interfaces" in IT-Academy.</p>
-
-				<p> Ready to implement excellent projects
-					with wonderful people.</p>
-			</div>
-		</div>
-	</section>
-	<section class="scills">
-		<div class="container">
-			<h2 class="title scills__title">
-				Skills
-			</h2>
-			<div class="scills__text">I work in such programs as</div>
-			<div class="scills__wrapper">
-				<div class="scills__scill scill">
-					<img src="img/scills/ps-1.png" alt="ps">
-					<div class="scill__descr">Adobe Photoshop</div>
-					<div class="rating">
-						<div class="rating__active"></div>
-						<div class="rating__items">
-							<input type="radio" class="rating__item" value="1" name="rating">
-							<input type="radio" class="rating__item" value="2" name="rating">
-							<input type="radio" class="rating__item" value="3" name="rating">
-							<input type="radio" class="rating__item" value="4" name="rating">
-							<input type="radio" class="rating__item" value="5" name="rating">
-						</div>
-						<div class="rating__value">4</div>
-					</div>
+	<div class="wrapper">
+		<nav class="menu lock-padding " id='menu'>
+			<div class="container">
+				<div class="menu__humburger">
+					<span></span>
 				</div>
-				<div class="scills__scill scill">
-					<img src="img/scills/ai_1.png" alt="ps">
-					<div class="scill__descr">Adobe Illustrator</div>
-					<div class="rating">
-						<div class="rating__active"></div>
-						<div class="rating__items">
-							<input type="radio" class="rating__item" value="1" name="rating">
-							<input type="radio" class="rating__item" value="2" name="rating">
-							<input type="radio" class="rating__item" value="3" name="rating">
-							<input type="radio" class="rating__item" value="4" name="rating">
-							<input type="radio" class="rating__item" value="5" name="rating">
-						</div>
-						<div class="rating__value">3</div>
-					</div>
+				<div class="menu__body">
+					<a data-goto='.main' class="menu__link active" href="#">Home</a>
+					<a data-goto='.about' class="menu__link" href="#">About me</a>
+					<a data-goto='.scills' class="menu__link" href="#">Skills</a>
+					<a data-goto='.portfolio' class="menu__link" href="#">Portfolio</a>
+					<a data-goto='.contacts' class="menu__link" href="#">Contacts</a>
 				</div>
-				<div class="scills__scill scill">
-					<img src="img/scills/ae-1.png" alt="ps">
-					<div class="scill__descr">Adobe <br> After Effects</div>
-					<div class="rating">
-						<div class="rating__active"></div>
-						<div class="rating__items">
-							<input type="radio" class="rating__item" value="1" name="rating">
-							<input type="radio" class="rating__item" value="2" name="rating">
-							<input type="radio" class="rating__item" value="3" name="rating">
-							<input type="radio" class="rating__item" value="4" name="rating">
-							<input type="radio" class="rating__item" value="5" name="rating">
-						</div>
-						<div class="rating__value">4</div>
-					</div>
-				</div>
-				<div class="scills__scill scill">
-					<img src="img/scills/figma-1.png" alt="ps">
-					<div class="scill__descr">Figma</div>
-					<div class="rating">
-						<div class="rating__active"></div>
-						<div class="rating__items">
-							<input type="radio" class="rating__item" value="1" name="rating">
-							<input type="radio" class="rating__item" value="2" name="rating">
-							<input type="radio" class="rating__item" value="3" name="rating">
-							<input type="radio" class="rating__item" value="4" name="rating">
-							<input type="radio" class="rating__item" value="5" name="rating">
-						</div>
-						<div class="rating__value">4</div>
-					</div>
-				</div>
-
-
-
 			</div>
-		</div>
-	</section>
-	<section class="portfolio">
-		<div class="container">
-			<h2 class="portfolio__title title">
-				Portfolio
-			</h2>
-			<div class="portfolio__content">
-				<picture>
-					<source media="(min-width: 577px)" srcset="img/portfolio/fashion_store.png">
-					<source media="(max-width:576px )" srcset="img/portfolio/mobile/fashionStore.png">
-					<img src="img/portfolio/fashion_store.png" alt="fashion_store">
+		</nav>
+		<section class="main">
+			<div class="container">
+
+				<div class="main__body">
+					<h1 class="name">Denis Novik</h1>
+					<div class="descr">UX | UI designer <br> 24 years old, Minsk</div>
+				</div>
+				<picture class="main__photo">
+					<source media="(min-width: 576px)" srcset="img/main_photo.png">
+					<source media="(max-width: 576px)" srcset="img/mobile_photo.png">
+					<img src="img/main_photo.png" alt="Denis Novik">
 				</picture>
-
-				<div class="portfolio__content-link"><a href="#">Online fashion store - Homepage</a></div>
 			</div>
-			<div class="portfolio__content">
-				<picture>
-					<source media="(min-width: 577px)" srcset="img/portfolio/reebok_web.png">
-					<source media="(max-width:576px )" srcset="img/portfolio/mobile/reebok_web.png">
-					<img src="img/portfolio/reebok_web.png" alt="reebok_web">
-				</picture>
+		</section>
+		<section class="about">
+			<div class="container">
+				<h2 class="title about__title">
+					About me
+				</h2>
+				<div class="about__text">
+					<p>Hi, I'm Denis - UX/UI designer from Minsk.
+						I'm interested in design and everything connected with it.</p>
 
-				<div class="portfolio__content-link"><a href="#">Reebok Store - Concept</a></div>
-			</div>
-			<div class="portfolio__content">
-				<picture>
-					<source media="(min-width: 577px)" srcset="img/portfolio/braun.png">
-					<source media="(max-width:576px )" srcset="img/portfolio/mobile/braun.png">
-					<img src="img/portfolio/braun.png" alt="braun">
-				</picture>
+					<p>I'm studying at courses "Web and mobile design
+						interfaces" in IT-Academy.</p>
 
-				<div class="portfolio__content-link"><a href="#">Braun Landing Page - Concept</a></div>
+					<p> Ready to implement excellent projects
+						with wonderful people.</p>
+				</div>
 			</div>
-		</div>
-	</section>
-	<section class="contacts">
-		<div class="container">
-			<h2 class="title contacts__title">Contacts </h2>
-			<div class="contacts__text">Want to know more or just chat?
-				You are welcome!</div>
+		</section>
+		<section class="scills">
+			<div class="container">
+				<h2 class="title scills__title">
+					Skills
+				</h2>
+				<div class="scills__text">I work in such programs as</div>
+				<div class="scills__wrapper">
+					<div class="scills__scill scill">
+						<img src="img/scills/ps-1.png" alt="ps">
+						<div class="scill__descr">Adobe Photoshop</div>
+						<div class="rating">
+							<div class="rating__active"></div>
+							<div class="rating__items">
+								<input type="radio" class="rating__item" value="1" name="rating">
+								<input type="radio" class="rating__item" value="2" name="rating">
+								<input type="radio" class="rating__item" value="3" name="rating">
+								<input type="radio" class="rating__item" value="4" name="rating">
+								<input type="radio" class="rating__item" value="5" name="rating">
+							</div>
+							<div class="rating__value">4</div>
+						</div>
+					</div>
+					<div class="scills__scill scill">
+						<img src="img/scills/ai_1.png" alt="ps">
+						<div class="scill__descr">Adobe Illustrator</div>
+						<div class="rating">
+							<div class="rating__active"></div>
+							<div class="rating__items">
+								<input type="radio" class="rating__item" value="1" name="rating">
+								<input type="radio" class="rating__item" value="2" name="rating">
+								<input type="radio" class="rating__item" value="3" name="rating">
+								<input type="radio" class="rating__item" value="4" name="rating">
+								<input type="radio" class="rating__item" value="5" name="rating">
+							</div>
+							<div class="rating__value">3</div>
+						</div>
+					</div>
+					<div class="scills__scill scill">
+						<img src="img/scills/ae-1.png" alt="ps">
+						<div class="scill__descr">Adobe <br> After Effects</div>
+						<div class="rating">
+							<div class="rating__active"></div>
+							<div class="rating__items">
+								<input type="radio" class="rating__item" value="1" name="rating">
+								<input type="radio" class="rating__item" value="2" name="rating">
+								<input type="radio" class="rating__item" value="3" name="rating">
+								<input type="radio" class="rating__item" value="4" name="rating">
+								<input type="radio" class="rating__item" value="5" name="rating">
+							</div>
+							<div class="rating__value">4</div>
+						</div>
+					</div>
+					<div class="scills__scill scill">
+						<img src="img/scills/figma-1.png" alt="ps">
+						<div class="scill__descr">Figma</div>
+						<div class="rating">
+							<div class="rating__active"></div>
+							<div class="rating__items">
+								<input type="radio" class="rating__item" value="1" name="rating">
+								<input type="radio" class="rating__item" value="2" name="rating">
+								<input type="radio" class="rating__item" value="3" name="rating">
+								<input type="radio" class="rating__item" value="4" name="rating">
+								<input type="radio" class="rating__item" value="5" name="rating">
+							</div>
+							<div class="rating__value">4</div>
+						</div>
+					</div>
 
-			<button class="contacts__btn btn">Send message</button>
-			<div class="contacts__sotial">
-				<div class="contacts__sotial-wrapper">
-					<a href="#" class="sotial-link"> <img src="icons/linkedin.png" alt="linkedin"></a>
-					<a href="#" class="sotial-link"><img src="icons/instagram.png" alt="instagram"></a>
-					<a href="#" class="sotial-link"><img src="icons/behance.png" alt="behance"></a>
-					<a href="#" class="sotial-link"><img src="icons/dribble.png" alt="dribble"></a>
+
+
 				</div>
-				<div class="contacts__sotial-descr">Like me on <br>
-					LinkedIn, Instagram, Behance, Dribble</div>
 			</div>
-		</div>
-	</section>
-	<div class="overlay">
-		<div class="form">
-			<form action="#" class="form__body" id="form">
-				<h1 class="form__title">Отправка данных на почту</h1>
-				<div class="form__item">
-					<label for="formName" class="form__label">Имя*:</label>
-					<input type="text" id="formName" name="name" class="form__input _req">
+		</section>
+		<section class="portfolio">
+			<div class="container">
+				<h2 class="portfolio__title title">
+					Portfolio
+				</h2>
+				<div class="portfolio__content">
+					<picture>
+						<source media="(min-width: 577px)" srcset="img/portfolio/fashion_store.png">
+						<source media="(max-width:576px )" srcset="img/portfolio/mobile/fashionStore.png">
+						<img src="img/portfolio/fashion_store.png" alt="fashion_store">
+					</picture>
+
+					<div class="portfolio__content-link"><a href="#">Online fashion store - Homepage</a></div>
 				</div>
-				<div class="form__item">
-					<label for="formEmail" class="form__label">E-mail*:</label>
-					<input type="text" id="formEmail" name="email" class="form__input _req _email">
+				<div class="portfolio__content">
+					<picture>
+						<source media="(min-width: 577px)" srcset="img/portfolio/reebok_web.png">
+						<source media="(max-width:576px )" srcset="img/portfolio/mobile/reebok_web.png">
+						<img src="img/portfolio/reebok_web.png" alt="reebok_web">
+					</picture>
+
+					<div class="portfolio__content-link"><a href="#">Reebok Store - Concept</a></div>
 				</div>
-				<div class="form__item">
-					<label for="forMessage" class="form__label">Сообщение:</label>
-					<textarea name="message" id="forMessage" class="form__input"></textarea>
+				<div class="portfolio__content">
+					<picture>
+						<source media="(min-width: 577px)" srcset="img/portfolio/braun.png">
+						<source media="(max-width:576px )" srcset="img/portfolio/mobile/braun.png">
+						<img src="img/portfolio/braun.png" alt="braun">
+					</picture>
+
+					<div class="portfolio__content-link"><a href="#">Braun Landing Page - Concept</a></div>
 				</div>
-				<div class="form__item">
-					<div class="checkbox">
-						<input type="checkbox" checked name="agreement" id="formAgreement" class="checkbox__input _req">
-						<label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку
-								персональных
-								данных в соответствие с <a href="#">Условиями</a>*</span> </label>
+			</div>
+		</section>
+		<section class="contacts">
+			<div class="container">
+				<h2 class="title contacts__title">Contacts </h2>
+				<div class="contacts__text">Want to know more or just chat?
+					You are welcome!</div>
+
+				<a href="#popup" class="contacts__btn btn popup__link">Send message</a>
+				<div class="contacts__sotial">
+					<div class="contacts__sotial-wrapper">
+						<a href="#" class="sotial-link"> <img src="icons/linkedin.png" alt="linkedin"></a>
+						<a href="#" class="sotial-link"><img src="icons/instagram.png" alt="instagram"></a>
+						<a href="#" class="sotial-link"><img src="icons/behance.png" alt="behance"></a>
+						<a href="#" class="sotial-link"><img src="icons/dribble.png" alt="dribble"></a>
+					</div>
+					<div class="contacts__sotial-descr">Like me on <br>
+						LinkedIn, Instagram, Behance, Dribble</div>
+				</div>
+			</div>
+		</section>
+		<div id="popup" class="popup">
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#menu" class="popup__close close-popup">&times;</a>
+					<div class="form">
+						<form action="#" class="form__body" id="form">
+							<h1 class="form__title">Отправка данных на почту</h1>
+							<div class="form__item">
+								<label for="formName" class="form__label">Имя*:</label>
+								<input type="text" id="formName" name="name" class="form__input _req">
+							</div>
+							<div class="form__item">
+								<label for="formEmail" class="form__label">E-mail*:</label>
+								<input type="text" id="formEmail" name="email" class="form__input _req _email">
+							</div>
+							<div class="form__item">
+								<label for="forMessage" class="form__label">Сообщение:</label>
+								<textarea name="message" id="forMessage" class="form__input"></textarea>
+							</div>
+							<div class="form__item">
+								<div class="checkbox">
+									<input type="checkbox" checked name="agreement" id="formAgreement"
+										class="checkbox__input _req">
+									<label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку
+											персональных
+											данных в соответствие с <a href="#">Условиями</a>*</span> </label>
+								</div>
+							</div>
+							<button type="submit" class="form__button">Отправить</button>
+						</form>
 					</div>
 				</div>
-				<button type="submit" class="form__button">Отправить</button>
-			</form>
+			</div>
 		</div>
+
+	</div>
 	</div>
 	<script src="js/scrypt.js"></script>
 </body>
