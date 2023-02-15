@@ -106,10 +106,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   }
-
+  const popupActive = document.querySelector(".popup.open");
   function popupOpen(curentPopup) {
     if (curentPopup && unlock) {
-      const popupActive = document.querySelector(".popup.open");
       if (popupActive) {
         popupClose(popupActive, false);
       } else {
@@ -196,7 +195,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (response.ok) {
         let result = await response.json();
         alert(result.message);
-        formPreview.innerHTML = "";
         form.reset();
         form.classList.remove("_sending");
       } else {

@@ -11,9 +11,9 @@ $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->isHTML(true);
 
 //От кого письмо
-$mail->setFrom('nicelex703@ekcsoft.com', 'Mailer');
+$mail->setFrom('cg11018@cg11018.tw1.ru ', 'Mailer');
 // Кому отправить
-$mail->addAddress('cg11018@cg11018.tw1.ru');
+$mail->addAddress('verstalka@verstalka2023.ru');
 // Тема письма
 $mail->Subject = 'Привет! Это Mailer';
 

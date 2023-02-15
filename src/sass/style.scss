@@ -301,8 +301,8 @@ body.lock {
 	margin: 0 auto;
 	color: #fff;
 	padding: 30px 0;
+	position: relative;
 	&__body {
-		position: relative;
 		&::after {
 			content: "";
 			position: absolute;
